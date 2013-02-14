@@ -4,7 +4,7 @@
     <list default="true" id="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" name="Default" comment="" />
     <ignored path="kazlovesbats.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360822664527" ignored="false" />
+    <file path="/index.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360858247456" ignored="false" />
     <file path="/bootstrap.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360806565281" ignored="false" />
     <file path="/a.coffee" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778445438" ignored="false" />
     <file path="/a.py" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778449443" ignored="false" />
@@ -14,7 +14,7 @@
     <file path="/a.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778517020" ignored="false" />
     <file path="/a.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360811419342" ignored="false" />
     <file path="/main.js" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360821900472" ignored="false" />
-    <file path="/dummy.xml" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360820109369" ignored="false" />
+    <file path="/dummy.xml" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360858106862" ignored="false" />
     <file path="/main.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360816795464" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +35,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="225" column="36" selection-start="8492" selection-end="8492" vertical-scroll-proportion="0.56110156">
+            <state line="66" column="16" selection-start="3282" selection-end="3282" vertical-scroll-proportion="0.15490533">
               <folding />
             </state>
           </provider>
@@ -165,8 +165,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -343,6 +343,29 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="225" column="36" selection-start="8492" selection-end="8492" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="1" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1360821916095" expanded="true" signature="12:1383" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="42" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -382,7 +405,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="36" selection-start="8492" selection-end="8492" vertical-scroll-proportion="0.56110156">
+        <state line="66" column="16" selection-start="3282" selection-end="3282" vertical-scroll-proportion="0.15490533">
           <folding />
         </state>
       </provider>
