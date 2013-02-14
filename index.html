@@ -177,18 +177,6 @@
         </div>
         <% }); %>
       </script>
-      var item = {
-      url: post.post_url,
-      type: post.type,
-      date: post.date,
-      asking_name: post.asking_name,
-      asking_url: post.askin_url,
-      question: post.question,
-      note_count: post.note_count,
-      caption: post.caption,
-      photo: post.photos[0].original_size.url,
-      };
-
     </div> <!-- #container -->
 
 
@@ -299,10 +287,13 @@
             question: post.question,
             note_count: post.note_count,
             caption: post.caption,
-            photo: post.photos[0].original_size.url,
           };
 
-          var date = new Date(1000 * item.date);
+          if (post.photos) {
+            item.photo = post.photos[0].original_size.url || ''
+          }
+
+          var date = new Date(item.date);
           item.date = date.toLocaleDateString();
 
           templateData.items.push(item);
