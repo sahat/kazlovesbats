@@ -31,6 +31,10 @@
   background: #000;
 }
 
+.navbar-inverse {
+  background-color: rgba(0,0,0,.85);
+}
+
 .element.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
 .element.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
 .element.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
