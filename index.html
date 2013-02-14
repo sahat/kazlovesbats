@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>kazlovesbats | isAwesome()</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/main.css">
-
-
 
     <script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
 
@@ -49,6 +47,9 @@
                     <a href="#filter" data-option-value=".youtube">YouTube</a>
                 </li>
                 <li class="">
+                  <a href="#filter" data-option-value=".instagram">Instagram</a>
+                </li>
+                <li class="">
                     <a href="#filter" data-option-value=".tumblr">Tumblr</a>
                 </li>
                 <li class="">
@@ -57,10 +58,7 @@
                 <li class="">
                     <a href="#filter" data-option-value=".blogger">Blogger</a>
                 </li>
-                <li class="">
-                  <a href="#filter" data-option-value=".instagram">Instagram</a>
-                </li>
-                </ul>
+              </ul>
             </div>
         </div>
     </div>
@@ -114,7 +112,7 @@
             </p>
 
             <div class="thumbnail-footer">
-              <small>Uploaded on <strong><%= item.uploadDate %></strong></small>
+              <small>Uploaded on <strong class="date"><%= item.uploadDate %></strong></small>
             </div>
           </div>
         <% }); %>
@@ -125,25 +123,23 @@
           <button class="btn btn-small btn-primary">Instagram</button>
           <img src="<%= item.image %>" alt="Instagram" />
           <p class="description">
-            <small>Filter: <%= item.filter %></small>
-            <small><i class="glyphicon-tag"></i><%= item.caption %></small>
+            <small><i class="glyphicon-tint"></i> <strong><%= item.filter %></strong></small><br>
+            <small><i class="glyphicon-comment"></i> <%= item.caption %></small>
           </p>
 
-          <p class="likes text-center">
+          <p class="likes">
             <small>
                 <span>
-                  <i class="glyphicon-thumbs-up"></i>
                   <strong> <%= item.likes %></strong> likes
                 </span>
                 <span>
-                  <i class="glyphicon-comment"></i>
                   <strong> <%= item.comments %></strong> comments
                 </span>
             </small>
           </p>
 
           <div class="thumbnail-footer">
-            <small>Created on <strong><%= item.created_time %></strong></small>
+            <small>Created on <strong class="date"><%= item.created_time %></strong></small>
           </div>
         </div>
         <% }); %>
@@ -195,7 +191,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/underscore.js"></script>
     <script src="js/jquery.isotope.js"></script>
-    <script src="js/main.js"></script>
 
     <script type="text/javascript">
       function showUploadedVideos(data) {
@@ -236,9 +231,7 @@
         var template = _.template(templateMarkup, templateData);
         $("#container").append(template);
       }
-    </script>
 
-    <script type="text/javascript">
       function showInstagramFeed(data) {
         var entries = data.data || [];
 
@@ -253,13 +246,13 @@
           var item = {
             image: entry.images.low_resolution.url,
             likes: entry.likes.count,
-            filter: entry.filter,
+            filter: entry.filter || 'None',
             created_time: entry.created_time,
             caption: entry.caption.text,
             comments: entry.comments.count
           };
 
-          var date = new Date(item.created_time);
+          var date = new Date(Date.now() - item.created_time);
           item.created_time = date.toLocaleDateString();
 
           templateData.items.push(item);
@@ -270,7 +263,11 @@
         $("#container").append(template);
       }
     </script>
+
     <script src="http://gdata.youtube.com/feeds/api/users/kazlovesbats/uploads?v=2&alt=json-in-script&callback=showUploadedVideos"></script>
     <script src="https://api.instagram.com/v1/users/50548853/media/recent/?access_token=6321489.f59def8.5ceb23cbbb664eef927df559469b663c&callback=showInstagramFeed"></script>
+    <script src="js/main.js"></script>
+
   </body>
+
 </html>
