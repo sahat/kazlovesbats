@@ -223,7 +223,7 @@
             comments: entry.comments.count
           };
 
-          var date = new Date(Date.now() - item.created_time);
+          var date = new Date(1000 * item.created_time);
           item.created_time = date.toLocaleDateString();
 
           templateData.items.push(item);

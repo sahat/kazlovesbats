@@ -35,10 +35,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="42" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.74870914">
-              <folding>
-                <element signature="tag#script#4;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="225" column="36" selection-start="8492" selection-end="8492" vertical-scroll-proportion="0.56110156">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,8 +165,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -343,6 +341,29 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="42" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="1" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1360821916095" expanded="true" signature="12:1383" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
@@ -361,10 +382,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="42" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.74870914">
-          <folding>
-            <element signature="tag#script#4;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+        <state line="225" column="36" selection-start="8492" selection-end="8492" vertical-scroll-proportion="0.56110156">
+          <folding />
         </state>
       </provider>
     </entry>
