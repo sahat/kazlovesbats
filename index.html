@@ -150,7 +150,44 @@
         </div>
         <% }); %>
       </script>
+      <script type="text/template" id="tumblr-template">
+        <% _.each(items, function(item) { %>
+        <div class="thumbnail <%= service %>">
+          <button class="btn btn-small btn-success">Tumblr</button>
+          <a href="<%= item.url %>">
+            <img src="<%= item.photo %>" alt="Tumblr" />
+          </a>
+          <p class="description">
+            <small>Type: <strong><%= item.type %></strong></small><br>
+            <small>Caption: <%= item.caption %></small><br>
+            <small>Asking Name: <%= item.asking_name %></small>
+          </p>
 
+          <p class="likes">
+            <small>
+                <span>
+                  <strong> <%= item.note_count %></strong> notes
+                </span>
+            </small>
+          </p>
+
+          <div class="thumbnail-footer">
+            <small>Posted on <strong class="date"><%= item.date %></strong></small>
+          </div>
+        </div>
+        <% }); %>
+      </script>
+      var item = {
+      url: post.post_url,
+      type: post.type,
+      date: post.date,
+      asking_name: post.asking_name,
+      asking_url: post.askin_url,
+      question: post.question,
+      note_count: post.note_count,
+      caption: post.caption,
+      photo: post.photos[0].original_size.url,
+      };
 
     </div> <!-- #container -->
 
@@ -239,9 +276,46 @@
         var template = _.template(templateMarkup, templateData);
         $("#container").append(template);
       }
+
+      function showTumblrPosts(data) {
+        var feed = data.response;
+        var blog = feed.blog;
+        var posts = feed.posts || [];
+
+        var templateData = {
+          service: "tumblr",
+          items: []
+        };
+
+        for (var i = 0; i < posts.length; i++) {
+          var post = posts[i];
+
+          var item = {
+            url: post.post_url,
+            type: post.type,
+            date: post.date,
+            asking_name: post.asking_name,
+            asking_url: post.askin_url,
+            question: post.question,
+            note_count: post.note_count,
+            caption: post.caption,
+            photo: post.photos[0].original_size.url,
+          };
+
+          var date = new Date(1000 * item.date);
+          item.date = date.toLocaleDateString();
+
+          templateData.items.push(item);
+        }
+
+        var templateMarkup = $("#tumblr-template" ).html();
+        var template = _.template(templateMarkup, templateData);
+        $("#container").append(template);
+      }
     </script>
     <script src="http://gdata.youtube.com/feeds/api/users/kazlovesbats/uploads?v=2&alt=json-in-script&callback=showUploadedVideos"></script>
     <script src="https://api.instagram.com/v1/users/50548853/media/recent/?access_token=6321489.f59def8.5ceb23cbbb664eef927df559469b663c&callback=showInstagramFeed"></script>
+    <script src="http://api.tumblr.com/v2/blog/allisoneckfeldt.tumblr.com/posts?api_key=6QWnF5eH13KDRKnJI2lIrIFLBhAWGv1fCi1v8FaRVzTlkTXO6A&callback=showTumblrPosts"></script>
     <script src="js/main.js"></script>
 
   </body>
