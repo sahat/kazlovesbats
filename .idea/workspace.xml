@@ -32,10 +32,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="51" selection-start="6534" selection-end="6534" vertical-scroll-proportion="0.09793814">
+            <state line="158" column="51" selection-start="6534" selection-end="6534" vertical-scroll-proportion="-0.625">
               <folding>
                 <element signature="e#7644#8955#0" expanded="false" />
               </folding>
@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="1" selection-start="371" selection-end="371" vertical-scroll-proportion="-11.4">
+            <state line="9" column="11" selection-start="135" selection-end="135" vertical-scroll-proportion="0.2180937">
               <folding />
             </state>
           </provider>
@@ -73,8 +73,8 @@
       <list>
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -166,8 +166,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -450,19 +450,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="1" selection-start="371" selection-end="371" vertical-scroll-proportion="-11.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="51" selection-start="6534" selection-end="6534" vertical-scroll-proportion="0.09793814">
+        <state line="158" column="51" selection-start="6534" selection-end="6534" vertical-scroll-proportion="-0.625">
           <folding>
             <element signature="e#7644#8955#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="135" selection-end="135" vertical-scroll-proportion="0.2180937">
+          <folding />
         </state>
       </provider>
     </entry>
