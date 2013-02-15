@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -52,12 +53,6 @@
                 <li class="">
                     <a href="#filter" data-option-value=".tumblr">Tumblr</a>
                 </li>
-                <li class="">
-                    <a href="#filter" data-option-value=".twitter">Twitter</a>
-                </li>
-                <li class="">
-                    <a href="#filter" data-option-value=".blogger">Blogger</a>
-                </li>
               </ul>
               <ul class="nav pull-right">
                 <li>
@@ -83,8 +78,7 @@
       <script type="text/template" id="youtube-template">
         <% _.each(items, function(item) { %>
           <div class="thumbnail <%= service %>">
-            <button class="btn btn-small btn-danger">YouTube</button>
-            <img src="<%= item.thumbnail %>" alt="YouTube" />
+            <a href="<%= item.url %>"><img src="<%= item.thumbnail %>" alt="YouTube" /></a>
             <strong><a href="<%= item.url %>"><%= item.title %></a></strong>
 
             <p class="description">
@@ -118,15 +112,16 @@
             </p>
 
             <div class="thumbnail-footer">
+              <img src="img/youtube_logo.png" alt="YouTube Logo">
               <small>Uploaded on <strong class="date"><%= item.uploadDate %></strong></small>
             </div>
           </div>
         <% }); %>
       </script>
+
       <script type="text/template" id="instagram-template">
         <% _.each(items, function(item) { %>
         <div class="thumbnail <%= service %>">
-          <button class="btn btn-small btn-primary">Instagram</button>
           <img src="<%= item.image %>" alt="Instagram" />
           <p class="description">
             <small><i class="glyphicon-tint"></i> <strong><%= item.filter %></strong></small><br>
@@ -145,33 +140,35 @@
           </p>
 
           <div class="thumbnail-footer">
-            <small>Created on <strong class="date"><%= item.created_time %></strong></small>
+            <img src="img/instagram_logo.png" alt="Instagram Logo">
+            <small>Uploaded on <strong class="date"><%= item.created_time %></strong></small>
           </div>
         </div>
         <% }); %>
       </script>
+      
       <script type="text/template" id="tumblr-template">
         <% _.each(items, function(item) { %>
         <div class="thumbnail <%= service %>">
-          <button class="btn btn-small btn-success">Tumblr</button>
-          <a href="<%= item.url %>">
-            <img src="<%= item.photo %>" alt="Tumblr" />
-          </a>
-          <p class="description">
-            <small>Type: <strong><%= item.type %></strong></small><br>
-            <small>Caption: <%= item.caption %></small><br>
-            <small>Asking Name: <%= item.asking_name %></small>
-          </p>
+          <% if (item.type == 'photo') { %>
+            <a href="<%= item.url %>">
+              <img src="<%= item.photo %>" alt="Tumblr" />
+            </a>
+          <% } else if (item.type == 'answer') { %>
+            <p><small>Q: <%= item.question %></small></p>
+            <p><small>A: <%= item.answer %></small></p>
+          <% } %>
 
           <p class="likes">
             <small>
                 <span>
-                  <strong> <%= item.note_count %></strong> notes
+                  <i class="glyphicon-pushpin"></i><strong> <%= item.note_count %></strong> notes
                 </span>
             </small>
           </p>
 
           <div class="thumbnail-footer">
+            <img src="img/tumblr_logo.png" alt="Tumblr Logo">
             <small>Posted on <strong class="date"><%= item.date %></strong></small>
           </div>
         </div>
@@ -249,13 +246,10 @@
             image: entry.images.low_resolution.url,
             likes: entry.likes.count,
             filter: entry.filter || 'None',
-            created_time: entry.created_time,
+            created_time: new Date(1000 * entry.created_time).toLocaleDateString(),
             caption: entry.caption.text,
             comments: entry.comments.count
           };
-
-          var date = new Date(1000 * item.created_time);
-          item.created_time = date.toLocaleDateString();
 
           templateData.items.push(item);
         }
@@ -285,12 +279,13 @@
             asking_name: post.asking_name,
             asking_url: post.askin_url,
             question: post.question,
+            answer: post.answer,
             note_count: post.note_count,
-            caption: post.caption,
+            caption: post.caption
           };
 
           if (post.photos) {
-            item.photo = post.photos[0].original_size.url || ''
+            item.photo = post.photos[0].alt_sizes[2].url || ''
           }
 
           var date = new Date(item.date);
@@ -303,12 +298,29 @@
         var template = _.template(templateMarkup, templateData);
         $("#container").append(template);
       }
+
+      function showBloggerPosts(data) {
+        console.log(data);
+      }
     </script>
     <script src="http://gdata.youtube.com/feeds/api/users/kazlovesbats/uploads?v=2&alt=json-in-script&callback=showUploadedVideos"></script>
     <script src="https://api.instagram.com/v1/users/50548853/media/recent/?access_token=6321489.f59def8.5ceb23cbbb664eef927df559469b663c&callback=showInstagramFeed"></script>
     <script src="http://api.tumblr.com/v2/blog/allisoneckfeldt.tumblr.com/posts?api_key=6QWnF5eH13KDRKnJI2lIrIFLBhAWGv1fCi1v8FaRVzTlkTXO6A&callback=showTumblrPosts"></script>
     <script src="js/main.js"></script>
 
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38525328-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   </body>
 
 </html>
