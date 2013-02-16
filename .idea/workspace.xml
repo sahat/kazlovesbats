@@ -4,8 +4,8 @@
     <list default="true" id="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" name="Default" comment="" />
     <ignored path="kazlovesbats.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360909877449" ignored="false" />
-    <file path="/bootstrap.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360806565281" ignored="false" />
+    <file path="/index.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361055022233" ignored="false" />
+    <file path="/bootstrap.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361052784971" ignored="false" />
     <file path="/a.coffee" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778445438" ignored="false" />
     <file path="/a.py" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778449443" ignored="false" />
     <file path="/a.jade" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778455839" ignored="false" />
@@ -14,8 +14,10 @@
     <file path="/a.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778517020" ignored="false" />
     <file path="/a.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360811419342" ignored="false" />
     <file path="/main.js" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360821900472" ignored="false" />
-    <file path="/dummy.xml" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360908253917" ignored="false" />
-    <file path="/main.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360904121914" ignored="false" />
+    <file path="/dummy.xml" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361054815876" ignored="false" />
+    <file path="/main.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361054578577" ignored="false" />
+    <file path="/app.js" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361052982145" ignored="false" />
+    <file path="/docs.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361050872193" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,30 +34,51 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="51" selection-start="6534" selection-end="6534" vertical-scroll-proportion="-0.625">
+            <state line="202" column="45" selection-start="7719" selection-end="7719" vertical-scroll-proportion="0.9020619">
               <folding>
-                <element signature="e#7644#8955#0" expanded="false" />
+                <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="11" selection-start="135" selection-end="135" vertical-scroll-proportion="0.2180937">
+            <state line="87" column="64" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!block;n#showUploadedVideos#0" expanded="false" />
+                <element signature="n#!!block;n#showTumblrPosts#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1926" column="5" selection-start="34109" selection-end="34114" vertical-scroll-proportion="-7.72">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
+            <state line="59" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docs.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/docs.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,10 +94,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/docs.css" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -138,7 +163,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -166,8 +191,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -179,8 +204,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Sahat\Dropbox\Projects\kazlovesbats\img" />
       <recent name="C:\Users\Sahat\Dropbox\Projects\kazlovesbats\js" />
+      <recent name="C:\Users\Sahat\Dropbox\Projects\kazlovesbats\img" />
       <recent name="C:\Users\Sahat\Dropbox\Projects\kazlovesbats" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -271,7 +296,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2427686" sideWeight="0.9982906" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2427686" sideWeight="0.9982906" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -344,18 +369,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="21" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#7644#8955#0" expanded="false" />
+            <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -367,33 +385,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="21" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#7644#8955#0" expanded="false" />
+            <element signature="n#!!block;n#showUploadedVideos#0" expanded="false" />
+            <element signature="n#!!block;n#showTumblrPosts#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="1" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -401,7 +399,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="225" column="36" selection-start="8492" selection-end="8492" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#7644#8955#0" expanded="false" />
+            <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -413,10 +411,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#showUploadedVideos#0" expanded="false" />
+            <element signature="n#!!block;n#showTumblrPosts#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -424,7 +425,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="42" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#7644#8955#0" expanded="false" />
+            <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -436,33 +437,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="51" selection-start="6534" selection-end="6534" vertical-scroll-proportion="-0.625">
           <folding>
-            <element signature="e#7644#8955#0" expanded="false" />
+            <element signature="n#!!block;n#showUploadedVideos#0" expanded="false" />
+            <element signature="n#!!block;n#showTumblrPosts#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ico/favicon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.isotope.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/docs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="135" selection-end="135" vertical-scroll-proportion="0.2180937">
+        <state line="59" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1926" column="5" selection-start="34109" selection-end="34114" vertical-scroll-proportion="-7.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="64" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!block;n#showUploadedVideos#0" expanded="false" />
+            <element signature="n#!!block;n#showTumblrPosts#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="45" selection-start="7719" selection-end="7719" vertical-scroll-proportion="0.9020619">
+          <folding>
+            <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

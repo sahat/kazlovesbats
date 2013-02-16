@@ -11,27 +11,16 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.png">
-
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
-
   </head>
   <body>
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
@@ -53,19 +42,18 @@
                 <li class="">
                     <a href="#filter" data-option-value=".tumblr">Tumblr</a>
                 </li>
+
               </ul>
-              <ul class="nav pull-right">
+              <ul class="nav">
                 <li>
-                  <a href="https://www.districtlines.com/kazlovesbats/youtube-goth-gothic-kazlovesbats">
-                    <strong>Online Store</strong>
-                  </a>
+                  <a href="https://www.districtlines.com/kazlovesbats/youtube-goth-gothic-kazlovesbats">Online Store</a>
                 </li>
               </ul>
             </div>
         </div>
     </div>
 
-    <div class="bs-docs-jumbotron masthead">
+    <div class="bs-docs-jumbotron">
         <div class="container">
             <h1>Allison Eckfeldt</h1>
             <p class="lead">aka Kazlovesbats</p>
@@ -129,14 +117,15 @@
           </p>
 
           <p class="likes">
-            <small>
-                <span>
-                  <strong> <%= item.likes %></strong> likes
-                </span>
-                <span>
-                  <strong> <%= item.comments %></strong> comments
-                </span>
-            </small>
+            <div class="btn-group">
+              <span>
+                <small><strong><%= item.likes %></strong> likes</small>
+              </span>
+
+              <span>
+                <button id="<%= item.id %>" class="comments btn btn-mini"><strong><%= item.commentsCount %></strong> comments</button>
+              </span>
+            </div>
           </p>
 
           <div class="thumbnail-footer">
@@ -174,7 +163,44 @@
         </div>
         <% }); %>
       </script>
+
+
     </div> <!-- #container -->
+    <script type="text/template" id="modal-template">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Comments</h4>
+          </div>
+          <div class="modal-body">
+            <% _.each(comments, function(item) { %>
+            <div class="row">
+              <div class="span3 ig-image"><img src="<%= item.profile_picture %>" alt="<%= item.username %>"></div>
+              <div class="span9">
+                <div class="row">
+                  <strong>@<%= item.username %></strong>: <%= item.text %>
+                </div>
+                <div class="row">
+                  <span class="muted">Posted on <strong><%= item.created_time %></strong></span>
+                </div>
+              </div>
+            </div>
+            <br>
+            <% }); %>
+
+            <% if (comments.length == 0) { %>
+            <p>No comments yet.</p>
+            <% } %>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <div id="commentsModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
 
 
     <!-- Footer
@@ -187,127 +213,14 @@
 
     <div id="videos"></div>
 
-    <script src="js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/underscore.js"></script>
-    <script src="js/jquery.isotope.js"></script>
-    <script type="text/javascript">
-      function showUploadedVideos(data) {
-        var feed = data.feed;
-        var entries = feed.entry || [];
-
-        var templateData = {
-          service: "youtube",
-          items: []
-        };
-
-        for (var i = 0; i < entries.length; i++) {
-          var entry = entries[i];
-
-          var item = {
-            url: entry.media$group.media$player.url,
-            title: entry.title.$t,
-            thumbnail: entry.media$group.media$thumbnail[1].url,
-            description: entry.media$group.media$description.$t,
-            viewCount: entry.yt$statistics.viewCount,
-            timeDuration: entry.media$group.yt$duration.seconds,
-            uploadDate: entry.media$group.yt$uploaded.$t,
-            likeCount: entry.yt$rating.numLikes,
-            dislikeCount: entry.yt$rating.numDislikes
-          };
-
-          var minutes = Math.floor(parseInt(item.timeDuration) / 60);
-          var seconds = parseInt(item.timeDuration) - minutes * 60;
-          item.timeDuration = minutes + ':' + seconds;
-
-          var date =  new Date(item.uploadDate);
-          item.uploadDate = date.toLocaleDateString();
-
-          templateData.items.push(item);
-        }
-
-        var templateMarkup = $("#youtube-template" ).html();
-        var template = _.template(templateMarkup, templateData);
-        $("#container").append(template);
-      }
-
-      function showInstagramFeed(data) {
-        var entries = data.data || [];
-
-        var templateData = {
-          service: "instagram",
-          items: []
-        };
-
-        for (var i = 0; i < entries.length; i++) {
-          var entry = entries[i];
-
-          var item = {
-            image: entry.images.low_resolution.url,
-            likes: entry.likes.count,
-            filter: entry.filter || 'None',
-            created_time: new Date(1000 * entry.created_time).toLocaleDateString(),
-            caption: entry.caption.text,
-            comments: entry.comments.count
-          };
-
-          templateData.items.push(item);
-        }
-
-        var templateMarkup = $("#instagram-template" ).html();
-        var template = _.template(templateMarkup, templateData);
-        $("#container").append(template);
-      }
-
-      function showTumblrPosts(data) {
-        var feed = data.response;
-        var blog = feed.blog;
-        var posts = feed.posts || [];
-
-        var templateData = {
-          service: "tumblr",
-          items: []
-        };
-
-        for (var i = 0; i < posts.length; i++) {
-          var post = posts[i];
-
-          var item = {
-            url: post.post_url,
-            type: post.type,
-            date: post.date,
-            asking_name: post.asking_name,
-            asking_url: post.askin_url,
-            question: post.question,
-            answer: post.answer,
-            note_count: post.note_count,
-            caption: post.caption
-          };
-
-          if (post.photos) {
-            item.photo = post.photos[0].alt_sizes[2].url || ''
-          }
-
-          var date = new Date(item.date);
-          item.date = date.toLocaleDateString();
-
-          templateData.items.push(item);
-        }
-
-        var templateMarkup = $("#tumblr-template" ).html();
-        var template = _.template(templateMarkup, templateData);
-        $("#container").append(template);
-      }
-
-      function showBloggerPosts(data) {
-        console.log(data);
-      }
-    </script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/app.js"></script>
     <script src="http://gdata.youtube.com/feeds/api/users/kazlovesbats/uploads?v=2&alt=json-in-script&callback=showUploadedVideos"></script>
     <script src="https://api.instagram.com/v1/users/50548853/media/recent/?access_token=6321489.f59def8.5ceb23cbbb664eef927df559469b663c&callback=showInstagramFeed"></script>
     <script src="http://api.tumblr.com/v2/blog/allisoneckfeldt.tumblr.com/posts?api_key=6QWnF5eH13KDRKnJI2lIrIFLBhAWGv1fCi1v8FaRVzTlkTXO6A&callback=showTumblrPosts"></script>
-    <script src="js/main.js"></script>
-
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
