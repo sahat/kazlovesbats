@@ -4,20 +4,22 @@
     <list default="true" id="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" name="Default" comment="" />
     <ignored path="kazlovesbats.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361055022233" ignored="false" />
+    <file path="/index.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361678223379" ignored="false" />
     <file path="/bootstrap.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361052784971" ignored="false" />
     <file path="/a.coffee" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778445438" ignored="false" />
     <file path="/a.py" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778449443" ignored="false" />
     <file path="/a.jade" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778455839" ignored="false" />
     <file path="/a.js" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778464396" ignored="false" />
     <file path="/a.less" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778471943" ignored="false" />
-    <file path="/a.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778517020" ignored="false" />
+    <file path="/a.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361652088813" ignored="false" />
     <file path="/a.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360811419342" ignored="false" />
     <file path="/main.js" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360821900472" ignored="false" />
-    <file path="/dummy.xml" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361054815876" ignored="false" />
-    <file path="/main.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361054578577" ignored="false" />
-    <file path="/app.js" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361052982145" ignored="false" />
-    <file path="/docs.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361050872193" ignored="false" />
+    <file path="/dummy.xml" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361676036151" ignored="false" />
+    <file path="/main.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361677916312" ignored="false" />
+    <file path="/app.js" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361677268914" ignored="false" />
+    <file path="/docs.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361648894906" ignored="false" />
+    <file path="/demo.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361670507049" ignored="false" />
+    <file path="/lightbox.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361677131556" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +39,17 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="45" selection-start="7719" selection-end="7719" vertical-scroll-proportion="0.9020619">
-              <folding>
-                <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="95" column="38" selection-start="5229" selection-end="5229" vertical-scroll-proportion="0.3935811">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lightbox.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/lightbox.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,19 +57,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="64" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!block;n#showUploadedVideos#0" expanded="false" />
-                <element signature="n#!!block;n#showTumblrPosts#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1926" column="5" selection-start="34109" selection-end="34114" vertical-scroll-proportion="-7.72">
+            <state line="53" column="16" selection-start="1545" selection-end="1555" vertical-scroll-proportion="-1.8709677">
               <folding />
             </state>
           </provider>
@@ -69,16 +66,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docs.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/docs.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
+            <state line="146" column="22" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -97,16 +85,20 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/docs.css" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$USER_HOME$/Downloads/Wookmark-jQuery-master/example-load-images/index.html" />
+        <option value="$PROJECT_DIR$/demo.html" />
+        <option value="$PROJECT_DIR$/css/lightbox.css" />
         <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/lightbox.js" />
+        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="371" />
-    <option name="y" value="3" />
-    <option name="width" value="984" />
+    <option name="x" value="315" />
+    <option name="y" value="40" />
+    <option name="width" value="1035" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -177,6 +169,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kazlovesbats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kazlovesbats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -189,8 +195,9 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="options.lastSelected" value="preferences.sourceCode.HTML" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Peepcode Screencasts/peepcode-081-emberjs/peepcode-081-emberjs-code/peepcode-081-emberjs-code/peepcode-ember-starter-app" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -204,11 +211,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\Sahat\Dropbox\Projects\kazlovesbats\js" />
-      <recent name="C:\Users\Sahat\Dropbox\Projects\kazlovesbats\img" />
-      <recent name="C:\Users\Sahat\Dropbox\Projects\kazlovesbats" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/img" />
       <recent name="C:\Users\Sahat\Dropbox\Projects\kazlovesbats\js" />
       <recent name="C:\Users\Sahat\Dropbox\Projects\kazlovesbats\css" />
     </key>
@@ -289,14 +300,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="371" y="3" width="984" height="728" extended-state="0" />
+    <frame x="315" y="40" width="1035" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2427686" sideWeight="0.9982906" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1626331" sideWeight="0.9982906" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -365,137 +376,121 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="21" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="1" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!block;n#showUploadedVideos#0" expanded="false" />
-            <element signature="n#!!block;n#showTumblrPosts#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="36" selection-start="8492" selection-end="8492" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="1" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!block;n#showUploadedVideos#0" expanded="false" />
-            <element signature="n#!!block;n#showTumblrPosts#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="42" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="1" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!block;n#showUploadedVideos#0" expanded="false" />
-            <element signature="n#!!block;n#showTumblrPosts#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ico/favicon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.isotope.min.js">
+    <entry file="file://$PROJECT_DIR$/js/jquery.wookmark.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/docs.css">
+    <entry file="file://$PROJECT_DIR$/css/emoji.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$USER_HOME$/Downloads/Wookmark-jQuery-master/example-load-images/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0">
+        <state line="92" column="6" selection-start="3707" selection-end="4210" vertical-scroll-proportion="0.3305785">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/moment.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Wookmark-jQuery-master/example-filter/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="8" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.45310014">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/kz.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1926" column="5" selection-start="34109" selection-end="34114" vertical-scroll-proportion="-7.72">
+        <state line="2064" column="0" selection-start="36412" selection-end="36412" vertical-scroll-proportion="0.33279222">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/async.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="64" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0">
+        <state line="53" column="16" selection-start="1545" selection-end="1555" vertical-scroll-proportion="-1.8709677">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/lightbox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery-1.7.2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery-1.9.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#!!block;n#showUploadedVideos#0" expanded="false" />
-            <element signature="n#!!block;n#showTumblrPosts#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lightbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="32" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.39123377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="22" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="45" selection-start="7719" selection-end="7719" vertical-scroll-proportion="0.9020619">
-          <folding>
-            <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+        <state line="95" column="38" selection-start="5229" selection-end="5229" vertical-scroll-proportion="0.3935811">
+          <folding />
         </state>
       </provider>
     </entry>

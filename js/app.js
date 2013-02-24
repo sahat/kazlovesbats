@@ -9,7 +9,6 @@ function showUploadedVideos(data) {
 
   for (var i = 0; i < entries.length; i++) {
     var entry = entries[i];
-
     var item = {
       url: entry.media$group.media$player.url,
       title: entry.title.$t,
@@ -17,7 +16,8 @@ function showUploadedVideos(data) {
       description: entry.media$group.media$description.$t,
       viewCount: entry.yt$statistics.viewCount,
       timeDuration: entry.media$group.yt$duration.seconds,
-      uploadDate: entry.media$group.yt$uploaded.$t,
+      raw_uploadDate: entry.media$group.yt$uploaded.$t,
+      uploadDate: moment(entry.media$group.yt$uploaded.$t).calendar(),
       likeCount: entry.yt$rating.numLikes,
       dislikeCount: entry.yt$rating.numDislikes
     };
@@ -26,16 +26,17 @@ function showUploadedVideos(data) {
     var seconds = parseInt(item.timeDuration) - minutes * 60;
     item.timeDuration = minutes + ':' + seconds;
 
-    var date =  new Date(item.uploadDate);
-    item.uploadDate = date.toLocaleDateString();
+    var date =  new Date(item.raw_uploadDate);
+    item.raw_uploadDate = date.toLocaleDateString();
 
     templateData.items.push(item);
   }
 
   var templateMarkup = $("#youtube-template" ).html();
   var template = _.template(templateMarkup, templateData);
-  $("#container").append(template);
+  $("#main").append(template);
 }
+
 
 function showInstagramFeed(data) {
   var entries = data.data || [];
@@ -47,14 +48,15 @@ function showInstagramFeed(data) {
 
   for (var i = 0; i < entries.length; i++) {
     var entry = entries[i];
-
     var item = {
       id: entry.id,
       image: entry.images.low_resolution.url,
+      full_image: entry.images.standard_resolution.url,
       likes: entry.likes.count,
       filter: entry.filter || 'None',
-      created_time: new Date(1000 * entry.created_time).toLocaleDateString(),
-      caption: entry.caption.text,
+      raw_created_time: new Date(1000 * entry.created_time),
+      created_time: moment.unix(entry.created_time).calendar(),
+      caption: jEmoji.unifiedToHTML(entry.caption.text),
       commentsCount: entry.comments.count
     };
 
@@ -63,41 +65,7 @@ function showInstagramFeed(data) {
 
   var templateMarkup = $("#instagram-template" ).html();
   var template = _.template(templateMarkup, templateData);
-  $("#container").append(template);
-
-  $('.comments').click(function() {
-    $.ajax({
-      type : "get",
-      dataType : "jsonp",
-      url : 'https://api.instagram.com/v1/media/' + $(this).attr('id') + '/comments?access_token=6321489.f59def8.5ceb23cbbb664eef927df559469b663c&callback=getComments',
-      success: function getComments(data) {
-
-        var comments_obj = {
-          comments: []
-        };
-
-        var entries = data.data || [];
-        for (var i = 0; i < entries.length; i++) {
-          var entry = entries[i];
-          var item = {
-            id: entry.id,
-            username: entry.from.username,
-            profile_picture: entry.from.profile_picture,
-            user_id: entry.from.id,
-            text: entry.text,
-            created_time: new Date(1000 * entry.created_time).toDateString()
-          };
-          comments_obj.comments.push(item);
-        }
-
-        console.log(comments_obj);
-        var modalMarkup = $("#modal-template" ).html();
-        var template = _.template(modalMarkup, comments_obj);
-        $('#commentsModal').html(template);
-        $('#commentsModal').modal();
-      }
-    });
-  });
+  $("#main").append(template);
 }
 
 function showTumblrPosts(data) {
@@ -112,11 +80,11 @@ function showTumblrPosts(data) {
 
   for (var i = 0; i < posts.length; i++) {
     var post = posts[i];
-
     var item = {
       url: post.post_url,
       type: post.type,
-      date: post.date,
+      raw_date: post.date,
+      date: moment(new Date(post.date)).calendar(),
       asking_name: post.asking_name,
       asking_url: post.askin_url,
       question: post.question,
@@ -129,61 +97,51 @@ function showTumblrPosts(data) {
       item.photo = post.photos[0].alt_sizes[2].url || ''
     }
 
-    var date = new Date(item.date);
-    item.date = date.toLocaleDateString();
+    var temp_date = new Date(item.raw_date);
+    item.raw_date = temp_date.toLocaleDateString();
 
     templateData.items.push(item);
   }
 
   var templateMarkup = $("#tumblr-template" ).html();
   var template = _.template(templateMarkup, templateData);
-  $("#container").append(template);
-}
-
-function showBloggerPosts(data) {
-  console.log(data);
+  $("#main").append(template);
 }
 
 $(function(){
-  var $container = $('#container');
+  var $container = $('#main');
   $container.imagesLoaded(function() {
     $container.isotope({
       itemSelector : '.thumbnail',
       getSortData : {
         date: function( $elem ) {
-          return new Date($elem.find('.date').text());
+          return new Date($elem.find('.date').attr('data-date'));
         }
       },
       sortBy: 'date',
       sortAscending : false
     });
 
-
-    var $optionSets = $('#options'),
+    var $optionSets = $('#filters'),
       $optionLinks = $optionSets.find('a');
 
     $optionLinks.click(function(){
       var $this = $(this);
-      // don't proceed if already selected
       if ( $this.parent().hasClass('active') ) {
         return false;
       }
-      var $optionSet = $this.parents('#options');
+      var $optionSet = $this.parents('#filters');
       $optionSet.find('.active').removeClass('active');
       $this.parent().addClass('active');
 
-      // make option object dynamically, i.e. { filter: '.my-filter-class' }
       var options = {},
         key = $optionSet.attr('data-option-key'),
         value = $this.attr('data-option-value');
-      // parse 'false' as false boolean
       value = value === 'false' ? false : value;
       options[ key ] = value;
       if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
-        // changes in layout modes need extra logic
         changeLayoutMode( $this, options )
       } else {
-        // otherwise, apply new options
         $container.isotope( options );
       }
 

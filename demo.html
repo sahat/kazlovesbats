@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+
+<button>Go</button>
+<p>Ready...</p>
+
+<script>
+  /* 3 functions to call when the Deferred object is resolved */
+  function fn1() {
+    var dfd = $.Deferred();
+    $("p").append(" 1 ");
+    dfd.resolve();
+    return dfd.promise();
+
+  }
+  function fn2() {
+    var dfd = $.Deferred();
+    $("p").append(" 2 ");
+    dfd.resolve();
+    return dfd.promise();
+  }
+  function fn3(n) {
+    $("p").append(n + " 3 " + n);
+  }
+
+  $.when(fn1(), fn2()).done(function() {
+    alert('DONE');
+  });
+</script>
+
+</body>
+</html>

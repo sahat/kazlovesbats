@@ -7,102 +7,77 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>kazlovesbats | isAwesome()</title>
+    <title>kazlovesbats | Allison Eckfeldt - Official Website</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-
+    <link href='http://fonts.googleapis.com/css?family=Nosifer|Metal+Mania|Miss+Fajardose' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/elusive-webfont.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/emoji.css">
+    <link rel="stylesheet" href="css/lightbox.css">
   </head>
   <body>
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="/">kazlovesbats</a>
-            <div class="nav-collapse collapse">
-              <ul id="options" class="nav clearfix" data-option-key="filter">
-                <li class="active">
-                    <a href="#filter" data-option-value="*">All</a>
-                </li>
-                <li class="">
-                    <a href="#filter" data-option-value=".youtube">YouTube</a>
-                </li>
-                <li class="">
-                  <a href="#filter" data-option-value=".instagram">Instagram</a>
-                </li>
-                <li class="">
-                    <a href="#filter" data-option-value=".tumblr">Tumblr</a>
-                </li>
-
-              </ul>
-              <ul class="nav">
-                <li>
-                  <a href="https://www.districtlines.com/kazlovesbats/youtube-goth-gothic-kazlovesbats">Online Store</a>
-                </li>
-              </ul>
-            </div>
+    <div class="bs-docs-jumbotron masthead">
+      <div class="container">
+        <div class="text-left">
+          <h1>Allison Eckfeldt</h1>
+          <div class="lead">Also known as <strong>kazlovesbats</strong></div>
+          <a href="http://instagram.com/allisonlovesbats"><img src="img/social/instagram.png" alt="Instagram Social Icon"></a>
+          <a href="https://www.facebook.com/allison.eckfeldt"><img src="img/social/facebook.png" alt="Facebook Social Icon"></a>
+          <a href="https://twitter.com/iwantapetbat"><img src="img/social/twitter.png" alt="Twitter Social Icon"></a>
+          <a href="https://plus.google.com/101768456021959256970"><img src="img/social/googleplus.png" alt="Google Plus Social Icon"></a>
+          <a href="http://allisoneckfeldt.tumblr.com/"><img src="img/social/tumblr.png" alt="Tumblr Social Icon"></a>
+          <a href="http://bubblegothinspired.blogspot.com/"><img src="img/social/blogger.png" alt="Blogger Social Icon"></a>
+          <a href="http://www.youtube.com/user/kazlovesbats"><img src="img/social/youtube.png" alt="YouTube Social Icon"></a>
+          <a href="http://www.vampirefreaks.com/Kazlovesbats"><img src="img/social/vf.png" alt="Vampire Freaks Social Icon"></a>
         </div>
+      </div>
     </div>
 
-    <div class="bs-docs-jumbotron">
-        <div class="container">
-            <h1>Allison Eckfeldt</h1>
-            <p class="lead">aka Kazlovesbats</p>
-        </div>
+    <div class="alert alert-info text-center">
+      <a href="https://www.districtlines.com/kazlovesbats/youtube-goth-gothic-kazlovesbats">Click here to check out <strong>t-shirt designs</strong> by Allison Eckfeldt!</a>
     </div>
 
 
-    <div id="container" class="clearfix">
+    <div class="container">
+      <ul id="filters" class="clearfix" data-option-key="filter">
+        <li class="active"><a href="#filter" data-option-value="*">All</a></li>
+        <li class=""><a href="#filter" data-option-value=".youtube">YouTube</a></li>
+        <li class=""><a href="#filter" data-option-value=".instagram">Instagram</a></li>
+        <li class=""><a href="#filter" data-option-value=".tumblr">Tumblr</a></li>
+      </ul>
+    </div>
 
+    <div id="main" class="container clearfix">
       <script type="text/template" id="youtube-template">
         <% _.each(items, function(item) { %>
           <div class="thumbnail <%= service %>">
-            <a href="<%= item.url %>"><img src="<%= item.thumbnail %>" alt="YouTube" /></a>
-            <strong><a href="<%= item.url %>"><%= item.title %></a></strong>
-
-            <p class="description">
-              <small><%= item.description %></small>
+            <a href="<%= item.url %>"><img src="<%= item.thumbnail %>" alt="YouTube Thumbnail" /></a>
+            <strong><small><a href="<%= item.url %>"><%= item.title %></a></small></strong>
+            <p class="text-center">
+              <i class="icon-eye-open"></i> Views: <span class="highlight"><strong> <%= item.viewCount %></strong> views</span>
+            </p>
+            <p class="text-center">
+              <i class="icon-video-chat"></i> Duration: <span class="highlight"><strong><%= item.timeDuration %></strong> minutes</span>
+            </p>
+            <p class="text-center">
+              <span class="likeCount text-success">
+                <i class="icon-thumbs-up"></i> <strong> <%= item.likeCount %></strong> likes
+              </span>
+              <span class="dislikeCount text-error">
+                <i class="icon-thumbs-down"></i> <strong> <%= item.dislikeCount %></strong> dislikes
+              </span>
+            </p>
+            <p class="text-center">
+              <i class="icon-calendar"></i> <span class="date" data-date="<%= item.raw_uploadDate %>"><%= item.uploadDate %></span>
             </p>
 
-            <p class="stats text-center">
-              <small>
-                <span class="viewCount">
-                  <i class="glyphicon-eye-open"></i>
-                  <strong> <%= item.viewCount %></strong> views
-                </span>
-                <span class="timeDuration">
-                  <i class="glyphicon-time"></i>
-                  <strong> <%= item.timeDuration %></strong> minutes
-                </span>
-              </small>
-            </p>
-
-            <p class="likes text-center">
-              <small>
-                <span class="likeCount text-success">
-                  <i class="glyphicon-thumbs-up"></i>
-                  <strong> <%= item.likeCount %></strong> likes
-                </span>
-                <span class="dislikeCount text-error">
-                  <i class="glyphicon-thumbs-down"></i>
-                  <strong> <%= item.dislikeCount %></strong> dislikes
-                </span>
-              </small>
-            </p>
-
-            <div class="thumbnail-footer">
-              <img src="img/youtube_logo.png" alt="YouTube Logo">
-              <small>Uploaded on <strong class="date"><%= item.uploadDate %></strong></small>
-            </div>
           </div>
         <% }); %>
       </script>
@@ -110,28 +85,18 @@
       <script type="text/template" id="instagram-template">
         <% _.each(items, function(item) { %>
         <div class="thumbnail <%= service %>">
+          <a href="<%= item.full_image %>" rel="lightbox">
           <img src="<%= item.image %>" alt="Instagram" />
-          <p class="description">
-            <small><i class="glyphicon-tint"></i> <strong><%= item.filter %></strong></small><br>
-            <small><i class="glyphicon-comment"></i> <%= item.caption %></small>
+          </a>
+          <p>
+            <i class="icon-pencil"></i> <%= item.caption %>
           </p>
-
-          <p class="likes">
-            <div class="btn-group">
-              <span>
-                <small><strong><%= item.likes %></strong> likes</small>
-              </span>
-
-              <span>
-                <button id="<%= item.id %>" class="comments btn btn-mini"><strong><%= item.commentsCount %></strong> comments</button>
-              </span>
-            </div>
+          <p>
+            <i class="icon-heart text-error"></i> <span><%= item.likes %></span>
+            <i class="icon-comment-alt"></i> <span class="highlight"><%= item.commentsCount %> comments</span>
+            <br>
+            <i class="icon-calendar"></i> <span class="date" data-date="<%= item.raw_created_time %>"><%= item.created_time %></span>
           </p>
-
-          <div class="thumbnail-footer">
-            <img src="img/instagram_logo.png" alt="Instagram Logo">
-            <small>Uploaded on <strong class="date"><%= item.created_time %></strong></small>
-          </div>
         </div>
         <% }); %>
       </script>
@@ -148,81 +113,36 @@
             <p><small>A: <%= item.answer %></small></p>
           <% } %>
 
-          <p class="likes">
-            <small>
-                <span>
-                  <i class="glyphicon-pushpin"></i><strong> <%= item.note_count %></strong> notes
-                </span>
-            </small>
+          <p>
+            <i class="icon-quotes-alt"></i> <span class="highlight"><%= item.note_count %> notes</span>
+            <br>
+            <i class="icon-calendar"></i> <span class="date" data-date="<%= item.raw_date %>"><%= item.date %></span>
           </p>
-
-          <div class="thumbnail-footer">
-            <img src="img/tumblr_logo.png" alt="Tumblr Logo">
-            <small>Posted on <strong class="date"><%= item.date %></strong></small>
-          </div>
         </div>
         <% }); %>
       </script>
+    </div>
 
-
-    </div> <!-- #container -->
-    <script type="text/template" id="modal-template">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Comments</h4>
-          </div>
-          <div class="modal-body">
-            <% _.each(comments, function(item) { %>
-            <div class="row">
-              <div class="span3 ig-image"><img src="<%= item.profile_picture %>" alt="<%= item.username %>"></div>
-              <div class="span9">
-                <div class="row">
-                  <strong>@<%= item.username %></strong>: <%= item.text %>
-                </div>
-                <div class="row">
-                  <span class="muted">Posted on <strong><%= item.created_time %></strong></span>
-                </div>
-              </div>
-            </div>
-            <br>
-            <% }); %>
-
-            <% if (comments.length == 0) { %>
-            <p>No comments yet.</p>
-            <% } %>
-          </div>
-          <div class="modal-footer">
-            <button class="btn" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </script>
-
-    <div id="commentsModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
-
-
-    <!-- Footer
-    ================================================== -->
     <footer class="footer">
         <div class="container">
-            Unofficial website of Allison Eckfeldt. Created by <a href="http://sahat.me">sahat</a>.
+            &copy; 2013. Official website of Allison Eckfeldt. Maintained by <a href="mailto:sakhat@gmail.com">Sahat</a>.
         </div>
     </footer>
 
-    <div id="videos"></div>
-
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/underscore-min.js"></script>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/lightbox.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/emoji.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+
     <script src="js/app.js"></script>
+
     <script src="http://gdata.youtube.com/feeds/api/users/kazlovesbats/uploads?v=2&alt=json-in-script&callback=showUploadedVideos"></script>
     <script src="https://api.instagram.com/v1/users/50548853/media/recent/?access_token=6321489.f59def8.5ceb23cbbb664eef927df559469b663c&callback=showInstagramFeed"></script>
     <script src="http://api.tumblr.com/v2/blog/allisoneckfeldt.tumblr.com/posts?api_key=6QWnF5eH13KDRKnJI2lIrIFLBhAWGv1fCi1v8FaRVzTlkTXO6A&callback=showTumblrPosts"></script>
-    <script type="text/javascript">
 
+    <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-38525328-1']);
       _gaq.push(['_trackPageview']);
@@ -232,8 +152,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
     </script>
   </body>
-
 </html>

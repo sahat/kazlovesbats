@@ -10,7 +10,6 @@
 
 body {
   position: relative; /* For scrollyspy */
-  padding-top: 62px; /* Default height of navbar */
 }
 
 /*  */
