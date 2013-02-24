@@ -4,7 +4,7 @@
     <list default="true" id="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" name="Default" comment="" />
     <ignored path="kazlovesbats.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361678223379" ignored="false" />
+    <file path="/index.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361680080739" ignored="false" />
     <file path="/bootstrap.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361052784971" ignored="false" />
     <file path="/a.coffee" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778445438" ignored="false" />
     <file path="/a.py" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360778449443" ignored="false" />
@@ -39,7 +39,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="111" selection-start="6263" selection-end="6263" vertical-scroll-proportion="0.33333334">
+            <state line="10" column="61" selection-start="491" selection-end="491" vertical-scroll-proportion="0.26737967">
               <folding />
             </state>
           </provider>
@@ -489,7 +489,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="111" selection-start="6263" selection-end="6263" vertical-scroll-proportion="0.33333334">
+        <state line="10" column="61" selection-start="491" selection-end="491" vertical-scroll-proportion="0.26737967">
           <folding />
         </state>
       </provider>
