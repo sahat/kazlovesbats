@@ -53,6 +53,20 @@ body {
   }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .thumbnail.instagram {
+    background: #fff url('../img/instagram@2x.png') no-repeat 4px 4px;
+  }
+
+  .thumbnail.youtube {
+    background: #fff url('../img/youtube@2x.png') no-repeat 4px 4px;
+  }
+
+  .thumbnail.tumblr {
+    background: #fff url('../img/tumblr@2x.png') no-repeat  4px 4px;
+  }
+}
+
 .thumbnail.instagram {
   padding-top: 38px;
   background: #fff url('../img/instagram.png') no-repeat 4px 4px;
@@ -78,7 +92,7 @@ body {
   text-decoration: none;
   font-size: 12px;
   float: left;
-  padding: 6px 7px 4px 7px;
+  padding: 15px;
   cursor: pointer;
   -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
