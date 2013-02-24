@@ -7,8 +7,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
     <title>kazlovesbats - Allison Eckfeldt | Official Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Nosifer|Metal+Mania|Miss+Fajardose' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/elusive-webfont.css">
@@ -16,6 +17,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/emoji.css">
     <link rel="stylesheet" href="css/lightbox.css">
+
+    <script src="js/modernizr.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -115,7 +118,7 @@
           <p>
             <i class="icon-quotes-alt"></i> <span class="highlight"><%= item.note_count %> notes</span>
             <br>
-            <i class="icon-calendar"></i> <span class="date" data-date="<%= item.raw_date %>"><%= item.raw_date %></span>
+            <i class="icon-calendar"></i> <span class="date" data-date="<%= item.raw_date %>"><%= item.date %></span>
           </p>
         </div>
         <% }); %>

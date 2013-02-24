@@ -84,7 +84,7 @@ function showTumblrPosts(data) {
       url: post.post_url,
       type: post.type,
       raw_date: post.date,
-      date: moment(new Date(post.date)).calendar(),
+      date: moment(Date(post.date)).calendar(),
       asking_name: post.asking_name,
       asking_url: post.askin_url,
       question: post.question,
@@ -92,7 +92,6 @@ function showTumblrPosts(data) {
       note_count: post.note_count,
       caption: post.caption
     };
-
     if (post.photos) {
       item.photo = post.photos[0].alt_sizes[2].url || ''
     }
