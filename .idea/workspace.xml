@@ -16,7 +16,7 @@
     <file path="/main.js" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1360821900472" ignored="false" />
     <file path="/dummy.xml" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361676036151" ignored="false" />
     <file path="/main.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361679266371" ignored="false" />
-    <file path="/app.js" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361677268914" ignored="false" />
+    <file path="/app.js" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361679677747" ignored="false" />
     <file path="/docs.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361648894906" ignored="false" />
     <file path="/demo.html" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361670507049" ignored="false" />
     <file path="/lightbox.css" changelist="cc7a9b10-dcb2-4c85-b65d-f08dbb37f2b2" time="1361677131556" ignored="false" />
@@ -57,7 +57,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="16" selection-start="1545" selection-end="1555" vertical-scroll-proportion="-1.8709677">
+            <state line="55" column="20" selection-start="1627" selection-end="1665" vertical-scroll-proportion="8.774194">
               <folding />
             </state>
           </provider>
@@ -66,7 +66,7 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="894" selection-end="894" vertical-scroll-proportion="0.19077902">
+            <state line="110" column="12" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.5325914">
               <folding />
             </state>
           </provider>
@@ -88,9 +88,9 @@
         <option value="$USER_HOME$/Downloads/Wookmark-jQuery-master/example-load-images/index.html" />
         <option value="$PROJECT_DIR$/demo.html" />
         <option value="$PROJECT_DIR$/css/lightbox.css" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/lightbox.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
@@ -443,13 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="16" selection-start="1545" selection-end="1555" vertical-scroll-proportion="-1.8709677">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/lightbox.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
@@ -487,9 +480,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="20" selection-start="1627" selection-end="1665" vertical-scroll-proportion="8.774194">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="894" selection-end="894" vertical-scroll-proportion="0.19077902">
+        <state line="110" column="12" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.5325914">
           <folding />
         </state>
       </provider>
