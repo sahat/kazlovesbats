@@ -146,3 +146,6 @@ footer {
   padding: 0.8em 0;
   background: #f2f0f0;
 }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
