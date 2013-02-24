@@ -36,10 +36,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="22" selection-start="2909" selection-end="2909" vertical-scroll-proportion="0.7486631">
+            <state line="49" column="22" selection-start="2909" selection-end="2909" vertical-scroll-proportion="-7.6363635">
               <folding />
             </state>
           </provider>
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="24" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0">
+            <state line="110" column="12" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.3799682">
               <folding />
             </state>
           </provider>
@@ -99,8 +99,8 @@
         <option value="$PROJECT_DIR$/js/lightbox.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -482,13 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="24" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="125" column="0" selection-start="3476" selection-end="3476" vertical-scroll-proportion="0.0">
@@ -498,7 +491,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="22" selection-start="2909" selection-end="2909" vertical-scroll-proportion="0.7486631">
+        <state line="49" column="22" selection-start="2909" selection-end="2909" vertical-scroll-proportion="-7.6363635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="12" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.3799682">
           <folding />
         </state>
       </provider>
