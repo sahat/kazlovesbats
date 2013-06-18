@@ -1,0 +1,151 @@
+body {
+  margin-top: -50px;
+  background: url(../img/furley_bg.png);
+}
+
+.thumbnail .btn-small {
+  border-radius: 4px 4px 0 0;
+}
+
+.thumbnail-footer {
+  margin: 0 -5px -5px -5px;
+  padding: 5px 5px;
+  background-color: #f2f0f0;
+}
+.masthead {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.bs-docs-jumbotron h1 {
+  font-family: 'Miss Fajardose', cursive;
+  font-size: 120px;
+  text-shadow: 1px 2px 0px rgba(0,0,0,0.4);
+}
+
+.bs-docs-jumbotron {
+  margin-bottom: 0;
+  background: #4b0082;
+}
+
+.alert {
+  border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .bs-docs-jumbotron {
+    background: #000 url(../img/kz.jpg)  no-repeat right;
+  }
+  .bs-docs-jumbotron h1 {
+    text-shadow: 0px 0px 30px #fff;
+    font-size: 88px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .bs-docs-jumbotron h1 {
+    font-size: 120px
+  }
+  .masthead {
+    padding-top: 79px;
+    padding-bottom: 80px;
+  }
+}
+
+.thumbnail.instagram {
+  padding-top: 38px;
+  background: #fff url('../img/instagram.png') no-repeat 4px 4px;
+}
+
+.thumbnail.youtube {
+  padding-top: 38px;
+  background: #fff url('../img/youtube.png') no-repeat 4px 4px;
+}
+
+.thumbnail.tumblr {
+  padding-top: 38px;
+  background: #fff url('../img/tumblr.png') no-repeat  4px 4px;
+}
+
+#filters {
+  list-style-type: none;
+  text-align: center;
+}
+
+#filters li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 12px;
+  float: left;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  margin: 0 1% 0 1%;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+#filters li a:hover {
+  background: #dedede;
+}
+
+#filters li.active a {
+  background: #333;
+  color: #fff;
+}
+
+.thumbnail p {
+  color: #666;
+  font-size: 12px;
+  margin: 7px 0 0 7px;
+}
+
+.thumbnail {
+  width: 270px;
+  margin: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid #dedede;
+}
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: opacity;
+  -moz-transition-property:    opacity;
+  -ms-transition-property:     opacity;
+  -o-transition-property:      opacity;
+  transition-property:         opacity;
+}
+
+.highlight {
+  border-bottom: 1px dotted;
+}
+
+footer {
+  font-size: 12px;
+  font-style: italic;
+  border-top: 1px solid #333;
+  padding: 0.8em 0;
+  background: #f2f0f0;
+}
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
