@@ -56,7 +56,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="294" column="1" selection-start="7734" selection-end="7734" vertical-scroll-proportion="0.0" vertical-offset="4410" max-vertical-offset="4500">
+            <state line="24" column="69" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4500">
               <folding />
             </state>
           </provider>
@@ -95,8 +95,8 @@
         <option value="$PROJECT_DIR$/css/emoji.css" />
         <option value="$PROJECT_DIR$/js/scrollup.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
       </list>
     </option>
   </component>
@@ -378,7 +378,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/moment.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14377" selection-start="14505" selection-end="14509" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165" />
+        <state line="5" column="14377" selection-start="14505" selection-end="14509" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/underscore-min.js">
@@ -406,16 +408,16 @@
         <state line="137" column="10" selection-start="3470" selection-end="3470" vertical-scroll-proportion="0.4575707" vertical-offset="1780" max-vertical-offset="7260" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="294" column="1" selection-start="7734" selection-end="7734" vertical-scroll-proportion="0.0" vertical-offset="4410" max-vertical-offset="4500">
+        <state line="252" column="3" selection-start="4354" selection-end="4354" vertical-scroll-proportion="0.0" vertical-offset="3256" max-vertical-offset="23985">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="252" column="3" selection-start="4354" selection-end="4354" vertical-scroll-proportion="0.0" vertical-offset="3256" max-vertical-offset="23985">
+        <state line="24" column="69" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4500">
           <folding />
         </state>
       </provider>

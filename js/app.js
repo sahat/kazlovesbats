@@ -22,7 +22,7 @@ function showUploadedVideos(data) {
       dislikeCount: entry.yt$rating.numDislikes || 0
     };
 
-
+    item.url = item.url.replace('&feature=youtube_gdata_player', '');
 
     var minutes = Math.floor(parseInt(item.timeDuration) / 60);
     var seconds = parseInt(item.timeDuration) - minutes * 60;
