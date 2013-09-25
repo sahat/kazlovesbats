@@ -633,7 +633,7 @@ iframe[class*="PIN_"] {
   text-decoration: none;
   float: right;
   color: #666;
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 #footer-content .social:focus,
 #footer-content .social:active,
