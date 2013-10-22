@@ -269,7 +269,7 @@ ul, ol {
 #branding {
   max-width: 1441px;
   margin: 0 auto;
-  padding: 0 35px;
+  padding: 0 10px;
   position: relative;
 }
 #site-title {
@@ -653,7 +653,6 @@ iframe[class*="PIN_"] {
 ----------------------------------------------- */
 @media only screen and (min-width: 380px) and (max-width: 720px) {
   body {
-    padding-top: 120px;
   }
 
   #filters {
@@ -1590,4 +1589,8 @@ img.mfp-img {
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
+}
+
+.text-center {
+  text-align: center;
 }
