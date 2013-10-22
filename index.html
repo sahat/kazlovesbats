@@ -41,7 +41,7 @@
     <div class="thumbnail <%= service %>">
       <div class="youtube-image">
         <a class="popup-youtube" href="<%= item.url %>">
-          <img class="lazy" src="img/grey.gif" data-original="<%= item.thumbnail %>">
+          <img src="<%= item.thumbnail %>">
         </a>
         <span class="duration"><%= item.timeDuration %></span>
       </div>
@@ -78,7 +78,7 @@
     <% _.each(items, function(item) { %>
     <div class="thumbnail <%= service %>">
       <a class="instagram-link" href="<%= item.full_image %>">
-        <img class="lazy" src="img/grey.gif" data-original="<%= item.image %>">
+        <img src="<%= item.image %>">
       </a>
       <p class="meta">
         <i class="glyphicon glyphicon-calendar"></i> <span class="date" data-date="<%= item.raw_created_time %>"><%= item.created_time %></span>
@@ -99,12 +99,12 @@
       <% if (item.type == 'photo') { %>
       <% if (item.photos && item.photos.length < 1) { %>
       <a class="tumblr-link" href="<%= item.original_size %>">
-        <img class="lazy" src="img/grey.gif" data-original="<%= item.photo %>">
+        <img src="<%= item.photo %>">
       </a>
       <% } else { %>
       <% _.each(item.photos, function(photo) { %>
       <a class="tumblr-gallery-link" href="<%= photo.original_size %>">
-        <img class="lazy" src="img/grey.gif" data-original="<%= photo.url %>">
+        <img src="<%= photo.url %>">
       </a>
       <% }); %>
       <% } %>
@@ -128,7 +128,7 @@
 
 <footer id="footer">
   <section id="footer-content" class="clearfix">
-    <p>© Allison Eckfeldt 2013. Code & Design by Sahat Yalkabov.</p>
+    <p>© Allison Eckfeldt 2013.</p>
     <a class="social" href="http://instagram.com/allisonlovesbats"><img src="img/social/instagram.png" alt="Instagram Social Icon"></a>
     <a class="social" href="https://www.facebook.com/allison.eckfeldt"><img src="img/social/facebook.png" alt="Facebook Social Icon"></a>
     <a class="social" href="https://plus.google.com/101768456021959256970?rel=author"><img src="img/social/googleplus.png" alt="Google Plus Social Icon"></a>
@@ -141,7 +141,6 @@
 </footer>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery.lazyload.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/jquery.isotope.min.js"></script>
 <script src="js/emoji.js"></script>
