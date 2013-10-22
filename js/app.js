@@ -235,12 +235,12 @@ $(function() {
   });
 
   var $container = $('#main');
-  var $imgs =  $("img.lazy");
+  var $imgs =  $("img");
 
-  $imgs.lazyload({
-    effect : "fadeIn",
-    failure_limit: Math.max($imgs.length - 1, 0)
-  });
+//  $imgs.lazyload({
+//    effect : "fadeIn",
+//    failure_limit: Math.max($imgs.length - 1, 0)
+//  });
 
   $container.imagesLoaded(function() {
     $container.isotope({
