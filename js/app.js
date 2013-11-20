@@ -60,11 +60,13 @@ function showInstagramFeed(data) {
       likes: entry.likes.count,
       filter: entry.filter || 'None',
       raw_created_time: new Date(1000 * entry.created_time),
+      caption: '',
       created_time: moment.unix(entry.created_time).calendar(),
-      caption: jEmoji.unifiedToHTML(entry.caption.text),
       commentsCount: entry.comments.count
     };
-
+    if (entry.caption) {
+      item.caption = jEmoji.unifiedToHTML(entry.caption.text);
+    }
     templateData.items.push(item);
   }
 
