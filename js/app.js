@@ -1,39 +1,25 @@
 function showUploadedVideos(data) {
-  var feed = data.feed;
-  var entries = feed.entry || [];
-
+  console.log(data);
+  var videos = data.items;
   var templateData = {
     service: "youtube",
     items: []
   };
 
-  for (var i = 0; i < entries.length; i++) {
-    var entry = entries[i];
+  for (var i = 0; i < videos.length; i++) {
+    var video = videos[i];
     var item = {
-      url: entry.media$group.media$player.url,
-      title: entry.title.$t,
-      thumbnail: entry.media$group.media$thumbnail[1].url,
-      description: entry.media$group.media$description.$t,
-      viewCount: numberWithCommas(entry.yt$statistics.viewCount),
-      timeDuration: entry.media$group.yt$duration.seconds,
-      raw_uploadDate: entry.media$group.yt$uploaded.$t,
-      uploadDate: moment(entry.media$group.yt$uploaded.$t).calendar(),
-      likeCount: entry.yt$rating.numLikes || 0,
-      dislikeCount: entry.yt$rating.numDislikes || 0
+      url: 'https://www.youtube.com/watch?v=' + video.id.videoId,
+      title: video.snippet.title,
+      thumbnail: video.snippet.thumbnails.high.url,
+      description: video.snippet.description,
+      raw_uploadDate: video.snippet.publishedAt,
+      uploadDate: moment(video.snippet.publishedAt).calendar()
     };
 
-    item.url = item.url.replace('&feature=youtube_gdata_player', '');
-
-    var minutes = Math.floor(parseInt(item.timeDuration) / 60);
-    var seconds = parseInt(item.timeDuration) - minutes * 60;
-    item.timeDuration = minutes + ':' + seconds;
-
-    var date =  new Date(item.raw_uploadDate);
+    var date = new Date(item.raw_uploadDate);
     item.raw_uploadDate = date.toLocaleDateString();
 
-    var totalVotes = parseInt(item.likeCount, 10) + parseInt(item.dislikeCount, 10);
-    item.percentOfLikes    = 100 * (item.likeCount / totalVotes);
-    item.percentOfDislikes = 100 *  (item.dislikeCount / totalVotes);
     templateData.items.push(item);
   }
 

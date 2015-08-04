@@ -56,23 +56,6 @@
 
       <strong><small><a href="<%= item.url %>"><%= item.title %></a></small></strong>
 
-      <div class="view-count">
-        <%= item.viewCount %>
-      </div>
-      <div class="video-extras-sparkbars">
-        <div class="video-extras-sparkbar-likes" style="width: <%= item.percentOfLikes %>%"></div>
-        <div class="video-extras-sparkbar-dislikes" style="width: <%= item.percentOfDislikes %>%"></div>
-      </div>
-
-      <div class="youtube-likes">
-              <span class="likeCount">
-                <i class="glyphicon glyphicon-thumbs-up"></i> <%= item.likeCount %>
-              </span>&nbsp;
-              <span class="dislikeCount">
-                <i class="glyphicon glyphicon-thumbs-down"></i> <%= item.dislikeCount %>
-              </span>
-      </div>
-
       <div class="meta">
         <i class="glyphicon glyphicon-calendar"></i> <span class="date" data-date="<%= item.raw_uploadDate %>"><%= item.uploadDate %></span>
         <span class="service pull-right">YouTube</span>
@@ -149,8 +132,8 @@
 <script src="js/underscore-min.js"></script>
 <script src="js/app.js"></script>
 
-<script src="http://gdata.youtube.com/feeds/api/users/kazlovesbats/uploads?v=2&alt=json-in-script&callback=showUploadedVideos"></script>
-<script src="https://api.instagram.com/v1/users/50548853/media/recent/?access_token=6321489.d2f75ee.ff99816ce4db4245a4afa18b6591ec3d&callback=showInstagramFeed"></script>
+<script src="https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCWyqkxRM-AlP9j5kjJ8G1MA&order=date&type=video&videoSyndicated=true&maxResults=10&key=AIzaSyA43y1Mit3E5WRgKHXODUQ4hGuebP-f5Fg&callback=showUploadedVideos"></script>
+<script src="https://api.instagram.com/v1/users/50548853/media/recent/?client_id=d2f75ee979a64a8a944076342cf05510&callback=showInstagramFeed"></script>
 <script src="http://api.tumblr.com/v2/blog/allisoneckfeldt.tumblr.com/posts?api_key=6QWnF5eH13KDRKnJI2lIrIFLBhAWGv1fCi1v8FaRVzTlkTXO6A&callback=showTumblrPosts"></script>
 
 <script type="text/javascript">
